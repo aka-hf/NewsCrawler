@@ -1,0 +1,21 @@
+# mysql
+mysql:
+  database_url: "mysql+aiomysql://root:password@localhost:3306/news_db_dev"
+# 日志
+logging:
+  level: "INFO"
+# 钉钉
+dingtalk:
+  enabled: false # 是否开启
+  webhook_url: "https://oapi.dingtalk.com/robot/send?access_token=dev_token"
+  secret: "dev_secret"
+# 飞书
+feishutalk:
+  enabled: false # 是否开启
+  webhook_url: ""
+  secret: ""
+# 数据保存
+storage:
+  enabled: true # 是否开启
+  output_format: "json" # 输出格式 csv json
+  to_database: false  # 是否保存到数据库
